@@ -1,0 +1,47 @@
+/**
+  * @author Phelan 
+  * Generic styling for use as a template to base our development code from 
+  **/
+
+/**
+  * main div styling
+  **/
+
+body{
+	/*margin:0px auto;*/
+}
+
+#headerGraphic{
+	border:1px solid red;
+	width:960px;
+	height: 100px;
+	margin:0px auto;
+
+}
+#innerHeaderBox{
+	border:1px solid green;
+	margin:0px auto;
+	width:700px;
+	height: 70px;
+	margin-top:29px;
+}
+#studentInfo{
+	border:1px solid blue;
+	width: 50px;
+	height:50px;
+}
+/*#pageTitle{
+	border:1px solid yellow;
+}
+#notebook{
+	border:1px solid black;
+}
+#nav{
+	border:1px solid purple;
+}
+#footerGraphic{
+	border:1px solid orange;
+}
+#footer{
+	border:1px solid #F7FF17;
+}*/

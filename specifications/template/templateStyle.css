@@ -1,0 +1,80 @@
+/**
+  * @author Phelan 
+  * Generic styling for use as a template to base our development code from 
+  **/
+
+/**
+  * main div styling
+  **/
+
+body{
+	/*margin:0px auto;*/
+}
+#wrapper{
+	width:1000px;
+	margin:0px auto;
+	height: 910px;
+}
+#headerGraphic{
+	border:1px solid red;
+	width:1060px;
+	height: 100px;
+	margin:0px auto;
+}
+#innerHeaderBox{
+	border:1px solid green;
+	margin:0px auto;
+	width:700px;
+	height: 70px;
+	margin-top:29px;
+}
+#studentInfo{
+	border:1px solid blue;
+	width: 70px;
+	height:70px;
+	float:left;
+}
+#pageTitle{
+	border:1px solid yellow;
+	width:620px;
+	height:70px;
+	float:right;
+}
+#notebook{
+	border:1px solid black;
+	width:900px;
+	margin:0px auto;
+	height: 950px;
+	z-index: -1;
+	float: left;
+}
+#mainContent{
+	border: 1px dashed red;
+	width:750px;
+	height: 800px;
+	float: left;
+}
+#additionalReadings{
+	border: 1px dashed blue;
+	float: right;
+	width:140px;
+	height: 800px;
+}
+#nav{
+	border:1px solid purple;
+	width:95px;
+	height: 300px;
+	float: right;
+}
+#footerGraphic{
+	border:1px solid orange;
+	width:1060px;
+	height: 100px;
+	margin:0px auto;
+}
+#footer{
+	border:1px dashed black;
+	height: 50px;
+	width:700px;
+	margin: 0px auto;
+}

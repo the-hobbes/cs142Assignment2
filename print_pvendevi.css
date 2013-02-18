@@ -1,0 +1,211 @@
+/**
+  * Print styling for the cs142 website.
+  **/
+
+/*reset the margins to fix a wierd issue with automatic margins being given to elements*/
+*{
+	margin:0px;
+}
+
+body{
+	background: url('img/headerImage.png') no-repeat  #3f808a;
+	background-size:100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+
+/*moving text of header next to logo*/
+header h1 {
+	font-size: 20px;
+	color: blue;
+}
+
+/*main navigation menu, on the right side of the notebook*/
+#mainMenu{
+	position: absolute;
+	left:80%;
+}
+
+/*administrative specific menu. needs to be placed with main navigation menu*/
+#adminMenu{
+	position: absolute;
+	left:80%;
+	top:520px;
+}
+
+/*this is set to override the user agent stylesheet padding*/
+#adminMenu ol{
+	/*-webkit-padding-start: 0;*/
+	padding-left:0;
+}
+
+/*this is set to override the user agent stylesheet padding*/
+#mainMenu ol {
+	/*-webkit-padding-start: 0;*/
+	padding-left:0;
+}
+
+/*this class is defined on the list items of all menus*/
+.menuLink {
+	list-style-type: none;
+	margin:10px 0px 10px 0px;	
+}
+
+#mainMenu li{
+	font-size: 14px;
+}
+
+/*the main content section with the notebook graphic etc.*/
+#mainContent{
+	width:90%;
+	padding: 5%;
+}
+
+/*main content styling*/
+#mainContent h1{
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+#mainContent h2 {
+	margin-bottom:10px;
+	margin-top:20px;
+	border-bottom: 1px solid black;
+}
+#mainContent table{
+	margin-top: 5px;
+	background-color: black;
+	margin: 0px auto;
+	margin-bottom: 10px;
+	border:2px solid black;
+}
+#mainContent td{
+	padding:5px;
+	border:1px solid black;
+}
+
+#mainContent p, #mainContent ol, #mainContent ul{
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+#grading{
+	margin:0px auto;
+	margin-bottom: 15px;
+}
+
+#mainContent h3{
+	margin-left:20px;
+	margin-bottom: 10px;
+}
+
+/*this is to target that url which extends past the page*/
+#mainContent p:nth-of-type(3){
+	margin:0px auto;
+	font-size: 14px;
+}
+
+/**
+  * Assignments page styling 
+  **/
+.AssignmentsLink > li{
+	padding-bottom: 10px;
+}
+
+#slide h2{
+	border-bottom: none;
+}
+
+#slide p{
+	margin-bottom: 10px;
+}
+
+#slide hr{
+	display: none;
+}
+
+/**
+  * Lectures page styling 
+  **/
+.LecturesLink li{
+	padding-bottom: 5px;
+}
+
+/**
+  * Sick page styling 
+  **/
+#callInSick {
+	margin-left:50px;
+
+}
+
+#callInSick label{
+	margin-right: 5px;
+}
+
+#optSick, #optPersonal{
+	margin-right: 5px;
+}
+
+.form{
+	/*background-color: #faebd7;*/
+	background-color: #E3FFFA;
+}
+
+/**
+  * Calendar page styling 
+  **/
+.Present{
+	/*background-color: green;*/
+	background: rgba(37, 224, 27, 0.2);
+}
+.Late{
+	/*background-color: yellow;*/
+	background: rgba(217, 224, 27, 0.2);
+}
+.Sick{
+	/*background-color: lime;*/
+	background: rgba(255, 0, 255, 0.2);
+}
+.Personal{
+	/*background-color: blue;*/
+	background: rgba(10, 35, 173, 0.2);
+}
+.Absent{
+	/*background-color: red;*/
+	background: rgba(173, 10, 27, 0.2);
+}
+.labComplete{
+	/*background-color: purple;*/
+	background: rgba(154, 10, 173, 0.2);
+}
+.vcalendar td{
+	padding:5px;
+	/*margin-left: 30px;*/
+}
+.vcalendar{
+	margin-left: 30px !important;
+}
+.Present, .Late, .Sick, .Personal, .Absent, .labComplete{
+	text-align: center;
+	font-weight: bold;
+}
+.atoday{
+	background-color: #FCF8E6;
+}
+
+/*sets the names of the web designers*/
+#author:before {
+	content: 'Team Kagney (Cody, Eric, Phelan)';
+}
+
+/*link stylings*/
+a:link {text-decoration:none;}	 /* unvisited link */
+
+#candyWrapper{
+	display: none;
+}
+
+body{
+	background:none;
+}

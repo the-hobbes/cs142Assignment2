@@ -1,0 +1,326 @@
+/**
+  * Styling for the main page of the cs142 website
+  **/
+
+
+/**
+  * Main Div and Top level DOM styling 
+  **/
+
+/*reset the margins to fix a wierd issue with automatic margins being given to elements*/
+*{
+	margin:0px;
+}
+
+body{
+	background: url('img/headerImage.png') no-repeat  #3f808a;
+	background-size:100%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+/*overall content wrapper*/
+#wrapper{
+	position: absolute;
+	left:15%;
+	width: 70%;
+	min-width: 970px;
+}
+
+/*wrapper that contains all of the top level navigation and such*/
+#candyWrapper{
+	padding-top:200px;
+}
+
+/*main website banner */
+header:before 
+{
+	content:url('img/logo3.png');
+	position: absolute;
+	float:left;
+	top:155px; 
+	left:-180px;
+}
+
+/*header for the main title*/
+header{
+	background:url('img/courseTitleBg.png') no-repeat;
+	padding-left:130px;
+	padding-top: 15px;
+	height: 40px;
+	z-index: 4;
+}
+
+/*moving text of header next to logo*/
+header h1 {
+	font-size: 20px;
+	/*color: blue;*/
+}
+
+/*blackboard, classes, uvm section*/
+#toolmenu {
+	position: absolute;
+	top: 0px;
+	left: 63%;
+	z-index: 8;
+}
+/*fixes the issue with the user agent syle adding padding*/
+#toolmenu ol{
+	/*-webkit-padding-start: 0;*/
+	padding-left: 0;
+}
+/*set the tool menu such that its li elements are side by side*/
+#toolmenu li {
+	float: left;
+	list-style-type: none;
+	padding: 0 10px;
+}
+#toolmenu a{
+	display: block;
+	width: 80px;
+	text-align:center;
+	padding: 7px 9px;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+	background:url('img/toptab.png');
+}
+#toolmenu a:hover{
+	background:url('img/toptabhover.png');
+	text-decoration: none;
+}
+
+/*student specific information*/
+#studentInfo{
+	background: url('img/infosplat.png');
+	width: 160px;
+	height: 80px;
+	color: black;
+	font-size: 12pt;
+	font-family: 'arial', sans-serif;
+	text-shadow: 2px 2px 3px white;
+	padding: 80px 60px;
+	position: relative;
+	float: right;
+	top:-230px;
+	/*z-index: -1;*/
+}
+#studentInfo span{
+	display: block;
+}
+
+/*main navigation menu, on the right side of the notebook*/
+#mainMenu{
+	position: absolute;
+	left:80%;
+}
+
+/*administrative specific menu. needs to be placed with main navigation menu*/
+#adminMenu{
+	position: absolute;
+	left:80%;
+	top:520px;
+}
+
+/*this is set to override the user agent stylesheet padding*/
+#adminMenu ol{
+	/*-webkit-padding-start: 0;*/
+	padding-left:0;
+}
+
+/*this is set to override the user agent stylesheet padding*/
+#mainMenu ol {
+	/*-webkit-padding-start: 0;*/
+	padding-left:0;
+}
+
+/*this class is defined on the list items of all menus*/
+.menuLink {
+	list-style-type: none;
+	margin:10px 0px 10px 0px;	
+}
+
+#mainMenu li{
+	font-size: 14px;
+}
+
+/*the a tag inside of the menulink*/
+.menuLink a{
+	background: url('img/navtab.png');
+	padding: 6px 0px 6px 15px;
+	display: block;
+	width: 135px;
+	color: white;
+	text-shadow: 2px 2px 3px black;
+
+}
+.menuLink a:hover{
+	background: url('img/navtabhover.png');
+	text-decoration: none;
+	text-shadow: -2px -2px 3px black;
+}
+#adminMenu a{
+	background: url('img/admintab.png');
+}
+#adminMenu a:hover {
+	background:url('img/admintabhover.png');
+}
+/*the main content section with the notebook graphic etc.*/
+#mainContent{
+	background: url('img/notepadMid.png');
+	width:69%;
+	padding: 5%;
+	padding-left:6%;
+}
+
+/*the bottom of the page*/
+footer{
+	background: url('img/footer.png') no-repeat;
+	padding: 30px 30%;
+	font-family:"Comic Sans",cursive;
+}
+/*sets the names of the web designers*/
+#author:before {
+	content: 'Team Kagney (Cody, Eric, Phelan)';
+}
+
+/*main content styling*/
+#mainContent h1{
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+#mainContent h2 {
+	margin-bottom:10px;
+	margin-top:20px;
+	border-bottom: 1px solid black;
+}
+#mainContent table{
+	margin-top: 5px;
+	box-shadow: 2px 2px 3px #000;
+	background-color: black;
+	margin: 0px auto;
+	margin-bottom: 10px;
+}
+
+#mainContent tr{
+	background-color: #E3FFFA;
+}
+
+#mainContent td{
+	padding:5px;
+}
+
+#mainContent p, #mainContent ol, #mainContent ul{
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+#grading{
+	margin:0px auto;
+	margin-bottom: 15px;
+}
+
+#mainContent h3{
+	margin-left:20px;
+	margin-bottom: 10px;
+}
+
+/*this is to target that url which extends past the page*/
+#mainContent p:nth-of-type(3){
+	margin:0px auto;
+	font-size: 14px;
+}
+
+/**
+  * Assignments page styling 
+  **/
+.AssignmentsLink > li{
+	padding-bottom: 10px;
+}
+
+#slide h2{
+	border-bottom: none;
+}
+
+#slide p{
+	margin-bottom: 10px;
+}
+
+#slide hr{
+	display: none;
+}
+
+/**
+  * Lectures page styling 
+  **/
+.LecturesLink li{
+	padding-bottom: 5px;
+}
+
+/**
+  * Sick page styling 
+  **/
+#callInSick {
+	margin-left:50px;
+
+}
+
+#callInSick label{
+	margin-right: 5px;
+}
+
+#optSick, #optPersonal{
+	margin-right: 5px;
+}
+
+.form{
+	/*background-color: #faebd7;*/
+	background-color: #E3FFFA;
+}
+
+/**
+  * Calendar page styling 
+  **/
+.Present{
+	/*background-color: green;*/
+	background: rgba(37, 224, 27, 0.2);
+}
+.Late{
+	/*background-color: yellow;*/
+	background: rgba(217, 224, 27, 0.2);
+}
+.Sick{
+	/*background-color: lime;*/
+	background: rgba(255, 0, 255, 0.2);
+}
+.Personal{
+	/*background-color: blue;*/
+	background: rgba(10, 35, 173, 0.2);
+}
+.Absent{
+	/*background-color: red;*/
+	background: rgba(173, 10, 27, 0.2);
+}
+.labComplete{
+	/*background-color: purple;*/
+	background: rgba(154, 10, 173, 0.2);
+}
+.vcalendar td{
+	padding:5px;
+	/*margin-left: 30px;*/
+}
+.vcalendar{
+	margin-left: 30px !important;
+}
+.Present, .Late, .Sick, .Personal, .Absent, .labComplete{
+	text-align: center;
+	font-weight: bold;
+}
+.atoday{
+	background-color: #FCF8E6;
+}
+
+/*link stylings*/
+a:link {text-decoration:none;}	 /* unvisited link */
+a:visited {text-decoration:none;}	/* visited link */
+a:hover {text-decoration:underline;}	/* mouse over link */
+a:active {text-decoration:underline;}	/* selected link */

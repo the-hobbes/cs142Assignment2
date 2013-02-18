@@ -1,0 +1,36 @@
+PAGES:
+template (group) -Phelan
+
+assignments - Cody/Phelan
+calendar - Cody/Phelan
+lectures - Cody/Phelan
+sick - Cody/Phelan
+syllabus - Cody/Phelan
+admin pages - Cody/Phelan
+submit - Cody/Phelan
+
+GRAPHICS:
+header- phelan
+footer- phelan
+
+notebook spine - Eric
+notebook background image - Eric
+logo - Eric
+tabs for blackboard and ivm buttons -Eric
+background for all pages - Eric
+cohesive color scheme - Phelan (get hex values for colors)
+
+NAVIGATION - Eric/Cody
+z-index
+hover effects
+background images
+
+GLOBAL STYLING:
+Fonts - Eric
+header formatting -Eric
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Links of interest
+
+http://www.uvm.edu/~pvendevi/cs142/assign1/resume.html
